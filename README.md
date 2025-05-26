@@ -147,20 +147,6 @@ Ensure the following directories have write permissions:
 - File upload validation
 - Face recognition for additional security
 
-## 📸 Screenshots
-
-### Employee Registration
-![Registration Screenshot](screenshots/registration.png)
-
-### QR Code Scanning
-![QR Scan Screenshot](screenshots/qr-scan.png)
-
-### Admin Dashboard
-![Admin Dashboard Screenshot](screenshots/admin-dashboard.png)
-
-### Attendance Reports
-![Reports Screenshot](screenshots/reports.png)
-
 ## 🐛 Troubleshooting
 
 ### Common Issues:
@@ -195,13 +181,6 @@ Ensure the following directories have write permissions:
 - [ ] API development
 - [ ] Real-time notifications
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 License
 
@@ -211,7 +190,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Surekha Pamulapati** - Lead Developer
 - Email: surekhapamulapati3@gmail.com
-- GitHub: [@your-github-username](https://github.com/your-github-username)
 
 ## 🙏 Acknowledgments
 
