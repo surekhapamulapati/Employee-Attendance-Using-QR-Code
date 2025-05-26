@@ -1,0 +1,227 @@
+# Employee Attendance System with QR Code & Face Recognition
+# Requirements and Dependencies
+
+# ==============================================
+# SERVER REQUIREMENTS
+# ==============================================
+
+# Web Server
+Apache/2.4.54 or higher
+PHP 7.4.33 or higher
+MySQL 5.7.36 or higher
+
+# XAMPP Version
+XAMPP 3.3.0 or higher (includes Apache, MySQL, PHP, phpMyAdmin)
+
+# ==============================================
+# PHP EXTENSIONS (Usually included with XAMPP)
+# ==============================================
+
+# Core Extensions
+php-mysqli          # MySQL database connectivity
+php-pdo             # PHP Data Objects
+php-pdo_mysql       # PDO MySQL driver
+php-gd              # Image processing for QR codes
+php-curl            # HTTP requests for APIs
+php-json            # JSON handling
+php-session         # Session management
+php-openssl         # Security and encryption
+php-mbstring        # Multibyte string handling
+php-fileinfo        # File type detection
+php-zip             # Archive handling
+
+# ==============================================
+# FRONTEND LIBRARIES (CDN/Local)
+# ==============================================
+
+# CSS Frameworks
+Bootstrap 5.3.0     # Responsive design framework
+Font Awesome 6.0    # Icons
+
+# JavaScript Libraries
+jQuery 3.6.0        # JavaScript library
+qrious 4.0.2        # QR code generation
+html5-qrcode 2.3.8  # QR code scanning
+face-api.js 0.22.2  # Face recognition
+Chart.js 3.9.1      # Charts and graphs
+DataTables 1.13.4   # Table enhancements
+
+# ==============================================
+# CAMERA & MEDIA
+# ==============================================
+
+# Browser Requirements
+WebRTC support      # Camera access
+getUserMedia API    # Media capture
+HTML5 Camera API    # Camera integration
+
+# ==============================================
+# DATABASE REQUIREMENTS
+# ==============================================
+
+# MySQL Configuration
+MySQL 5.7+ or MariaDB 10.3+
+InnoDB storage engine
+UTF-8 character set support
+Minimum 100MB storage space
+
+# Required Privileges
+CREATE, DROP, SELECT, INSERT, UPDATE, DELETE
+INDEX, ALTER, CREATE TEMPORARY TABLES
+
+# ==============================================
+# SYSTEM REQUIREMENTS
+# ==============================================
+
+# Operating System
+Windows 10/11       # For XAMPP
+macOS 10.14+        # Alternative
+Linux Ubuntu 18.04+ # Alternative
+
+# Hardware
+Minimum 4GB RAM
+2GB free disk space
+Webcam/Camera access
+Internet connection (for CDN libraries)
+
+# Browser Support
+Chrome 90+          # Recommended
+Firefox 88+         # Full support
+Safari 14+          # WebRTC support
+Edge 90+            # Full support
+
+# ==============================================
+# PHP CONFIGURATION (php.ini)
+# ==============================================
+
+# File Upload Settings
+file_uploads = On
+upload_max_filesize = 10M
+post_max_size = 10M
+max_execution_time = 300
+memory_limit = 256M
+
+# Session Settings
+session.auto_start = 0
+session.cookie_httponly = 1
+session.use_strict_mode = 1
+
+# Security Settings
+expose_php = Off
+display_errors = Off (for production)
+log_errors = On
+
+# ==============================================
+# DIRECTORY PERMISSIONS
+# ==============================================
+
+# Required Write Permissions
+uploads/            # Profile pictures, documents
+qr_codes/           # Generated QR code images
+logs/               # System and error logs
+cache/              # Temporary cache files
+sessions/           # Session storage
+
+# ==============================================
+# OPTIONAL ENHANCEMENTS
+# ==============================================
+
+# Email Functionality
+php-mail            # Built-in mail function
+PHPMailer 6.8.0     # Advanced email features
+
+# Excel Export
+PhpSpreadsheet 1.29 # Excel file generation
+
+# PDF Generation
+TCPDF 6.6.2         # PDF report generation
+mPDF 8.1.4          # Alternative PDF library
+
+# Image Processing
+ImageMagick 7.1+    # Advanced image manipulation
+GD Library 2.3+     # Basic image processing
+
+# ==============================================
+# DEVELOPMENT TOOLS (Optional)
+# ==============================================
+
+# Code Editor
+Visual Studio Code  # Recommended IDE
+Sublime Text 4      # Alternative
+PhpStorm           # Professional PHP IDE
+
+# Version Control
+Git 2.40+          # Source code management
+
+# Browser Developer Tools
+Chrome DevTools    # Debugging and testing
+Firefox Developer Tools
+
+# ==============================================
+# SECURITY RECOMMENDATIONS
+# ==============================================
+
+# SSL/HTTPS (for production)
+Valid SSL certificate
+HTTPS enforcement
+
+# Firewall Settings
+Proper port configuration
+Database access restrictions
+
+# Backup Solutions
+Regular database backups
+File system backups
+Version control
+
+# ==============================================
+# PERFORMANCE OPTIMIZATION
+# ==============================================
+
+# Caching
+OPcache enabled     # PHP bytecode caching
+MySQL query cache   # Database query caching
+
+# Compression
+Gzip compression    # Web server compression
+Image optimization  # Compressed images
+
+# ==============================================
+# INSTALLATION NOTES
+# ==============================================
+
+# 1. Install XAMPP from https://www.apachefriends.org/
+# 2. Start Apache and MySQL services
+# 3. Place project files in htdocs folder
+# 4. Import database from provided SQL file
+# 5. Configure database connection in config files
+# 6. Set proper file permissions
+# 7. Test camera and QR code functionality
+# 8. Configure admin credentials
+
+# ==============================================
+# TESTING REQUIREMENTS
+# ==============================================
+
+# Test Devices
+Desktop/Laptop with webcam
+Mobile devices for responsive testing
+Different browsers for compatibility
+
+# Test Data
+Sample employee records
+Test QR codes
+Various image formats for profile pictures
+
+# ==============================================
+# DEPLOYMENT CHECKLIST
+# ==============================================
+
+# Production Environment
+✓ HTTPS enabled
+✓ Error reporting disabled
+✓ Secure database credentials
+✓ File permissions configured
+✓ Backup system in place
+✓ Monitoring tools active
+✓ Security headers configured
